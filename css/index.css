@@ -182,3 +182,8 @@ img {
     margin-top: 2rem;
   }
 }
+.banner {
+  background-color: #235B2D;
+  color: #E5E5E5;
+  padding: 2%;
+}
