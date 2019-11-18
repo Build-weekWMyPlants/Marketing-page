@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,7 +141,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -160,4 +167,18 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+  .header h1 {
+    margin-top: 2rem;
+  }
 }
