@@ -155,7 +155,7 @@ h5 {
   margin: 2%;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -171,8 +171,8 @@ p {
   padding-bottom: 10px;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: auto;
+  max-height: auto;
 }
 .container {
   width: 100%;
@@ -235,11 +235,33 @@ img {
   color: #235B2D;
   font-style: italic;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bg3.jpg");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 420px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+.hero-text {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
 .main-content {
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-flow: column;
   align-items: center;
 }

@@ -13,6 +13,24 @@
     .button-mixin(white, @everglade, @grey, @everglade);
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/bg3.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 420px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+.hero-text {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
 .main-content{
     p {
         font-size: 1.8rem;
@@ -22,7 +40,7 @@
     display: flex;
     width: 100%;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-flow: column;
     align-items: center;
 }
