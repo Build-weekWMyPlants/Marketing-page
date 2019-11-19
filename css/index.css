@@ -235,7 +235,8 @@ img {
   color: #235B2D;
   font-style: italic;
 }
-.hero {
+.hero,
+.heroImg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +255,7 @@ img {
 }
 .hero-text {
   font-size: 4rem;
+  font-weight: bold;
   color: white;
   text-align: center;
 }
@@ -272,4 +274,8 @@ img {
 }
 .about {
   min-height: 500px;
+}
+.member-portrait {
+  width: 182px;
+  height: 182px;
 }
