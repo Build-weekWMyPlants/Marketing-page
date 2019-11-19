@@ -1,6 +1,11 @@
 // about Plant Parenthood
 .about {
     min-height: 500px;
+    h2 {
+        margin-top: 2rem;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
 }
 
 .dev-team {
@@ -14,22 +19,26 @@
     justify-content: space-between;
     margin-left: 1rem;
     // border: 1px dotted black;
-    min-width: 450px;
+    min-width: 400px;
 }
 .teammate2 {
     display: flex;
     flex-direction: row-reverse;
+    .mate-img {
+        margin-left: 1.1rem;
+    }
     @media @desktop {
         flex-direction: row;
     }
     justify-content: space-between;
     margin-left: 1rem;
     // border: 1px dotted black;
-    min-width: 450px;
+    min-width: 400px;
 }
 
 .mate-img {
     margin: 1.5rem .5rem;
+    margin-right: 1.1rem;
 }
 .mate-name {
     font-size: 2.0rem;
