@@ -2,11 +2,12 @@
 .banner {
     background-color: @everglade;
     color: @white;
-    padding: 2% 0;;
+    padding: 1rem;
 }
 
 .btn1 {
     .button-mixin();
+    margin-top: 2rem;
 }
 
 .btn2 {
@@ -15,13 +16,14 @@
 
 .hero, .heroImg {
     transition-property: background-image;
+    margin-bottom: 2rem;
     transition-duration: 1.5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/bg3.jpg"); /* The image used */
+    background-image: url("../img/bg1.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 420px; /* You must set a specified height */
+    height: 320px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
