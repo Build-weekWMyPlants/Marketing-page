@@ -1,6 +1,6 @@
-var i = 1;
-var myVar = setInterval(cycleBG, 6000);
+var plantNum = 1;
+var plantShow = setInterval(cycleBG, 7000);
 function cycleBG() {
-    document.getElementsByClassName("hero").heroImg.style.backgroundImage=`url('img/bg${i}.jpg')`;
-    i = (i < 8) ? i+1:1;        
+    document.getElementsByClassName("hero").heroImg.style.backgroundImage=`url('img/bg${plantNum}.jpg')`;
+    plantNum = (plantNum < 8) ? plantNum+1:1;     
 }
