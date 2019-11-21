@@ -1,8 +1,12 @@
 // about Plant Parenthood
 .about {
-    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    min-height: 40rem;
+    width: 100%;
     h2 {
-        padding: 2rem;
+        margin: 1rem;
+        padding: .5rem;
         font-size: 2.6rem;
         font-weight: bold;
     }
@@ -11,52 +15,125 @@
 .dev-team {
     display: flex;
     flex-wrap: wrap;
-    // border: 2px dashed red;
-}
-
-.teammate1 {
-    display: flex;
+    // justify-content: space-around;
     justify-content: space-between;
-    margin-left: 1rem;
-    // border: 1px dotted black;
-    min-width: 400px;
-}
-.teammate2 {
-    display: flex;
-    flex-direction: row-reverse;
-    .mate-img {
-        margin-left: 1.1rem;
+    @media @iphone5 {
+        width: 100%;
+        width:95%;
     }
-    @media @desktop {
-        flex-direction: row;
+    @media @galaxys5 {
+        justify-content: center;
     }
-    justify-content: space-between;
-    margin-left: 1rem;
-    // border: 1px dotted black;
-    min-width: 400px;
+    max-width: 120rem;
 }
 
 .mate-img {
-    margin: 1.5rem .5rem;
-    margin-right: 1.1rem;
+    img {
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem;
+        border: .2rem solid @everglade;
+        border-radius: .5rem;
+    }
+    @media @iphone5 {
+        img {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+    @media @galaxys5 {
+        img {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+    @media @iphonex {
+        img {
+            width: 14.5rem;
+            height: 14.5rem;
+        }
+    }
+    @media @ipad {
+        img {
+            width: 15rem;
+            height: 15rem;
+        }
+    }
 }
-.mate-name {
-    font-size: 2.0rem;
-    padding: 2.6rem 0;
-    // margin: 3.4rem 1.5rem 1.1rem;
+
+.mate-text {
+    // border: 1px dashed @black;
+    // width: 18rem;
+    display: block;
+    padding-top: 2rem;
+    width: 50%;
+
 }
+// teammate --> [  (picture) --> [img]  (text) --> [name role quote]  ] 
 .mate-role {
     font-size: 1.6rem;
-    // margin-left: 1.5rem;
 }
+
 .mate-quote {
-    font-size: 1.5rem;
-    max-width: 24rem;
-    // margin-left: 1.5rem;
+    font-size: 1.35rem;
 }
-.mate-portrait {
-    width: 182px;
-    height: 182px;
-    border: .2rem solid @everglade;
-    border-radius: .5rem;
+
+.mate-name {
+    font-size: 2.0rem;
+}
+
+
+.teammate1 {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    max-width: 60rem;
+    @media @iphone5 {
+        justify-content: space-evenly;
+        .teammate-small();
+        .mate-text {margin-left: 10px}
+    }
+    @media @ipad {
+        width: 30%;
+    }
+    @media @fliptm2 {
+        width: 50%;
+        max-width: 80rem;
+        .teammate-medium();
+    }
+    @media @ipadpro {
+        .teammate-large();
+    }
+}
+
+.teammate2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95%;
+    justify-content: space-evenly;
+    @media @iphone5 {
+        .teammate-small();
+        .mate-text{margin-left: 20px;}
+    }
+    @media @iphonex {
+        .mate-text{
+            margin-left: 10px;
+            justify-content: space-between;
+            // margin-right: 10px;
+        }
+        .mate-img{
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+    @media @fliptm2 {
+        width: 50%;
+        // max-width: 80rem;
+        flex-direction: row;
+        .teammate-medium();
+    }
+    @media @ipadpro {
+        .teammate-large();
+    }
 }
